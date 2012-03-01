@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>AndroidpinexchangeStatus</servlet-name>
+		<servlet-class>com.androidpinexchange.AndroidpinexchangeStatusServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Androidpinexchange</servlet-name>
+		<servlet-class>com.androidpinexchange.AndroidpinexchangeServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Board</servlet-name>
+		<servlet-class>com.androidpinexchange.BoardServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>BoardPostMessage</servlet-name>
+		<servlet-class>com.androidpinexchange.BoardPostMessageServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Collection</servlet-name>
+		<servlet-class>com.androidpinexchange.CollectionServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Trade</servlet-name>
+		<servlet-class>com.androidpinexchange.TradeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Androidpinexchange</servlet-name>
+		<url-pattern>/androidpinexchange</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AndroidpinexchangeStatus</servlet-name>
+		<url-pattern>/androidpinexchangeStatus</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Board</servlet-name>
+		<url-pattern>/Board</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Collection</servlet-name>
+		<url-pattern>/Collection</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BoardPostMessage</servlet-name>
+		<url-pattern>/BoardPostMessage</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Trade</servlet-name>
+		<url-pattern>/Trade</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
